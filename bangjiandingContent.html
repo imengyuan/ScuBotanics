@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>帮鉴定</title>
+<style>
+* { margin: 0; }
+#div1 { margin: auto; position: relative; }
+#div2 { margin-top:0px;}
+.box { float: left; padding: 10px; border: 1px solid #ccc; background: #f7f7f7; box-shadow: 0 0 8px #ccc; left:250px; position:absolute; }
+.box:hover { box-shadow: 0 0 10px #999; }
+.box img { width: 240px; }
+</style>
+</head>
+
+<body background="img/画板 5.jpg" style="height:768px;">
+<img src="img/画板 4.jpg" />
+ <div id="div2">
+ 	<div id="div1">
+          <div class="box"><a target="_blank" href="honggqianceng.html"><img src="img/红千层.jpg" alt=""></a></div>
+          <div class="box"><img src="img/IMG_1309.jpg" alt=""></div>
+          <div class="box"><img src="img/IMG_1831.jpg" alt=""></div>
+          <div class="box"><img src="img/IMG_2181.jpg" alt=""></div>
+          <div class="box"><img src="img/IMG_2199.jpg" alt=""></div>
+          <div class="box"><img src="img/IMG_2223.jpg" alt=""></div>
+          <div class="box"><img src="img/IMG_2420.jpg" alt=""></div>
+          <div class="box"><img src="img/IMG_2900.jpg" alt=""></div>
+          <div class="box"><img src="img/IMG_2952.jpg" alt=""></div>
+          <div class="box"><img src="img/IMG_2969.jpg" alt=""></div>
+          <div class="box"><img src="img/IMG_3361.jpg" alt=""></div>
+          <div class="box"><img src="img/IMG_3550.jpg" alt=""></div>
+          <div class="box"><img src="img/IMG_4572.jpg" alt=""></div>
+          <div class="box"><img src="img/IMG_5095.jpg" alt=""></div>
+          <div class="box"><img src="img/IMG_5471.jpg" alt=""></div>
+          <div class="box"><img src="img/IMG_5863.jpg" alt=""></div>
+          <div class="box"><img src="img/IMG_6568.jpg" alt=""></div>
+          <div class="box"><img src="img/IMG_6584.jpg" alt=""></div>
+          <div class="box"><img src="img/IMG_6674.jpg" alt=""></div>
+          <div class="box"><img src="img/IMG_6685.jpg" alt=""></div>
+          <div class="box"><img src="img/IMG_8154.jpg" alt=""></div>
+          <div class="box"><img src="img/IMG_8661.jpg" alt=""></div>
+          <div class="box"><img src="img/IMG_8785.jpg" alt=""></div>
+    </div>
+</div>
+</body>
+<script>window.jQuery || document.write('<script src="js/jquery-1.11.0.min.js"><\/script>')</script>
+<script src="js/jquery.waterfall.js"></script> 
+<script>
+	$("#div1").waterfall({
+	    itemClass: ".box",
+	    minColCount: 2,
+	    spacingHeight: 10,
+	    resizeable: true,
+	    ajaxCallback: function(success, end) {
+	        var data = {"data": [
+	            { "src": "IMG_1309.jpg" }, { "src": "IMG_1831.jpg" }, { "src": "IMG_2181.jpg" }, { "src": "IMG_2199.jpg" }, { "src": "IMG_2223.jpg" }, { "src": "IMG_2420.jpg" }, { "src": "IMG_2900.jpg" }, { "src": "IMG_2952.jpg" }, { "src": "IMG_2969.jpg" }, { "src": "IMG_3361.jpg" }, { "src": "IMG_3550.jpg" }, { "src": "IMG_4572.jpg" }, { "src": "IMG_5095.jpg" }, { "src": "红千层.jpg" }
+	        ]};
+	        var str = "";
+	        var templ = '<div class="box" style="opacity:0;filter:alpha(opacity=0);"><div class="pic"><img src="img/{{src}}" /></div></div>'
+
+	        for(var i = 0; i < data.data.length; i++) {
+	            str += templ.replace("{{src}}", data.data[i].src);
+	        }
+	        $(str).appendTo($("#div1"));
+	        success();
+	        end();
+	    }
+	});
+</script>
+</html>

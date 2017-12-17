@@ -1,0 +1,181 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head><title>登录</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+	<meta name="renderer" content="webkit">
+<link rel='stylesheet prefetch' href='css/bootstrap.min.css'>
+<link rel='stylesheet prefetch' href='css/font-awesome.min.css'>
+<link rel="stylesheet" href="css/style.css">
+<script src="js/jquery.js" type="text/javascript"></script>
+<script src='js/bootstrap.min.js'></script>
+    <style>
+	body{
+		background-color:black;
+		}
+	.audio_div {
+	}
+	.center{
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		width:400px;
+		height:460px;
+		margin-left:-200px;
+		margin-top:-230px;
+		background-image:url(img/signbox.png);
+		opacity:0.8;
+	}
+	.login{
+		position:absolute;
+		margin:auto;
+		left:50px;
+		top:8%;
+		animation:raise 1s ease-out;
+		transform:scale(0.6,0.6);
+	}
+	@-webkit-keyframes raise{
+		0%{transform:scale(1,1);top:50%;}
+		30%{transform:scale(1,1);top:50%;}
+		100%{transform:scale(0.6,0.6);top:22%;}
+	}
+	.pretext{
+		position:absolute;
+		width:42px;
+		height:42px;
+		background-color:#fff;
+		border-radius:50%;
+		opacity:1;
+		transform:translate(264px,20px);
+		animation:right 1.5s ease-out;
+	}
+	@-webkit-keyframes right{
+		0%{transform:translate(180px,20px);opacity:0;}
+		20%{transform:translate(180px,20px);opacity:0;}
+		66%{transform:translate(180px,20px);opacity:0.5;}
+		100%{transform:translate(264px,20px);opacity:1;}
+	}
+	.text{
+		resize:none;
+		position:absolute;
+		width:224px;
+		height:44px;
+		background-color:#fff;
+		font-size:24px;
+		text-align:center;
+		margin:0 auto;
+		transform:translate(84px,20px);
+		opacity:1;
+		border-radius:18px;
+		animation:spread 1.5s ease-out;
+	}
+	@-webkit-keyframes spread{
+		0%{transform:translate(84px,20px);width:0px;opacity:0;}
+		66%{transform:translate(184px,20px);width:0px;opacity:0;}
+		100%{transform:translate(84px,20px);width:224px;opacity:1;}
+	}
+	.next
+	{
+		bottom:90px;left:146px;position:absolute;
+		font-size:28px;
+		color:#3b4e3a;
+		opacity:1;
+		animation:next 2s;
+	}
+	@-webkit-keyframes next{
+		0%{opacity:0;}
+		75%{opacity:0;}
+		100%{opacity:1;}
+	}
+	</style>
+</head>
+
+<body background="img/signinbg.jpg">
+<div id="wrapper">
+	<div class="overlay"></div>
+
+	<!-- Sidebar -->
+	<nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
+		<ul class="nav sidebar-nav">
+			<li class="sidebar-brand">
+				<a>Navigation</a>
+			</li>
+			<li>
+				<a href="index.html"><i class="fa fa-fw fa-home"></i> 主页</a>
+			</li>
+			<li>
+				<a href="signup.html"><i class="fa fa-fw fa-twitter"></i> 注册</a>
+			</li>
+			<li>
+				<a href="login.html"><i class="fa fa-fw fa-user"></i> 登录</a>
+			</li>			
+			<li>
+				<a target="_Blank" href="search.html"><i class="fa fa-fw fa-search"></i> 搜索</a>
+			</li>
+			<li>
+				<a target="_Blank" href="qiujianding.html"><i class="fa fa-fw fa-tree"></i> 求鉴定</a>
+			</li>
+			<li>
+				<a target="_blank" href="preview.html"><i class="fa fa-fw fa-leaf"></i> 活动</a>
+			</li>
+
+		</ul>
+	</nav>
+	<!--/#sidebar-wrapper-->
+	<div id="page-content-wrapper">
+    
+	  <button type="button" class="hamburger is-closed animated fadeInLeft" data-toggle="offcanvas">
+		<span class="hamb-top"></span>
+		<span class="hamb-middle"></span>
+		<span class="hamb-bottom"></span>
+	  </button>
+
+    </div>
+	</div>
+	<div class="center">
+    <div class="login"><img src="img/sign.png"></div>
+    <div class="pretext" style="top:40%;"></div>
+    <div class="pretext" style="top:52%;"></div>
+
+        <form name="login" action="login.php" method="post">
+
+		<input type=text name="name" class="text" style="top:40%;" placeholder="Name">
+		<input type=password name="password" class="text" style="top:52%;" value="" placeholder="Password">
+		<input type="submit" name="submit" class="next" value="Sign in">
+            </form>
+
+    </div>
+
+<script type="text/javascript">
+	$(document).ready(function () {
+	  var trigger = $('.hamburger'),
+		  overlay = $('.overlay'),
+		 isClosed = false;
+
+		trigger.click(function () {
+		  hamburger_cross();      
+		});
+
+		function hamburger_cross() {
+
+		  if (isClosed == true) {          
+			overlay.hide();
+			trigger.removeClass('is-open');
+			trigger.addClass('is-closed');
+			isClosed = false;
+		  } else {   
+			overlay.show();
+			trigger.removeClass('is-closed');
+			trigger.addClass('is-open');
+			isClosed = true;
+		  }
+	  }
+	  
+	  $('[data-toggle="offcanvas"]').mouseover(function () {
+			$('#wrapper').toggleClass('toggled');
+	  });  
+	});
+</script>
+
+</body>
+</html>

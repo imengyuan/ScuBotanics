@@ -1,0 +1,25 @@
+CREAT DATABASE app;
+
+CREAT TABLE user
+(
+id int primary key auto_increment,
+password varchar(40),
+username text
+);
+
+create table question
+(
+id int primary key auto_increment,
+description varchar(50),
+file_loc varchar(50),
+username varchar(30)
+);
+
+create table comment
+(
+id int primary key auto_increment,
+comment varchar(50),
+username varchar(20)
+);
+
+insert into comment ()

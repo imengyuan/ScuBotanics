@@ -1,0 +1,388 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+	<meta name="renderer" content="webkit">
+	<title>川大植物志</title>
+    
+    <link rel='stylesheet prefetch' href='css/bootstrap.min.css'>
+	<link rel='stylesheet prefetch' href='css/font-awesome.min.css'>
+	<link rel="stylesheet" href="css/style.css">
+    <link rel='stylesheet' href='css/roll.css'>
+	<script type="text/javascript" src="js/sketch.min.js"></script>
+	<!--[if lte IE 8]>
+	<style type="text/css">
+		html,body{width:100%; height:100%; overflow:scroll}
+		.section-btn{display:none;}
+	</style>
+	<![endif]-->
+<style type="text/css">
+.labelbox {
+	transition:1s;
+	-moz-transition:1s;
+	position:absolute;
+	z-index:1;
+	background-color:#666;
+	color:#FFF;
+	font-size:24px;
+	font-family:"楷体";
+	border-radius:4px 4px 4px 4px;
+	text-align:center;
+}
+.labelbox:hover {
+	background-color:#2C4A30;
+}
+
+#apDiv1 {
+	position:absolute;
+	left:238px;
+	top:1580px;
+	width:72px;
+	height:37px;
+	z-index:1;
+}
+#apDiv2 {
+	left:659px;
+	top:1621px;
+	width:81px;
+	height:35px;
+	
+}
+
+#apDiv3 {
+	left:369px;
+	top:1587px;
+	width:79px;
+	height:33px;
+}
+
+#apDiv4 {
+	left:772px;
+	top:1568px;
+	width:62px;
+	height:28px;
+}
+
+#apDiv5 {
+	left:121px;
+	top:1590px;
+	width:55px;
+	height:32px;
+}
+
+#apDiv6 {
+	left:338px;
+	top:1562px;
+	width:53px;
+	height:30px;
+}
+
+#apDiv7 {
+	left:388px;
+	top:1555px;
+	width:102px;
+	height:30px;
+}
+
+#apDiv8 {
+	left:1166px;
+	top:1679px;
+	width:60px;
+	height:29px;
+}
+
+#learnmore1 {
+	position:absolute;
+	left:1159px;
+	top:1851px;
+	width:217px;
+	height:42px;
+	z-index:2;
+	font-size:24px;
+	color:#666;
+	transition:color 3s;
+}
+#learnmore1:hover {
+	color:#0F3;
+}
+#apDiv9 {
+	position:absolute;
+	left:1052px;
+	top:2479px;
+	width:207px;
+	height:50px;
+	z-index:1;
+	color:#666;
+	font-size:24px;
+	transition:color 3s;
+}
+#apDiv9:hover {
+	color:#0F3;
+}
+#apDiv10 {
+	position:absolute;
+	left:131px;
+	top:3092px;
+	width:216px;
+	height:45px;
+	z-index:1;
+	font-size:24px;
+	color:#666;
+	transition:color 3s;
+}
+#apDiv10:hover {
+	color:#0F3;
+}
+#apDiv11 {
+	position:absolute;
+	left:887px;
+	top:2441px;
+	width:56px;
+	height:37px;
+	z-index:1;
+}
+#apDiv12 {
+	position:absolute;
+	left:597px;
+	top:2496px;
+	width:63px;
+	height:33px;
+	z-index:1;
+}
+#apDiv13 {
+	position:absolute;
+	left:623px;
+	top:2357px;
+	width:64px;
+	height:36px;
+	z-index:1;
+}
+#apDiv14 {
+	position:absolute;
+	left:385px;
+	top:2289px;
+	width:100px;
+	height:37px;
+	z-index:1;
+}
+#apDiv15 {
+	position:absolute;
+	left:59px;
+	top:2455px;
+	width:121px;
+	height:34px;
+	z-index:1;
+}
+#apDiv16 {
+	position:absolute;
+	left:207px;
+	top:2986px;
+	width:52px;
+	height:33px;
+	z-index:1;
+}
+#apDiv17 {
+	position:absolute;
+	left:305px;
+	top:3030px;
+	width:122px;
+	height:33px;
+	z-index:1;
+}
+#apDiv18 {
+	position:absolute;
+	left:326px;
+	top:2947px;
+	width:79px;
+	height:35px;
+	z-index:1;
+}
+#apDiv19 {
+	position:absolute;
+	left:427px;
+	top:3118px;
+	width:56px;
+	height:36px;
+	z-index:1;
+}
+#apDiv20 {
+	position:absolute;
+	left:543px;
+	top:2982px;
+	width:74px;
+	height:30px;
+	z-index:1;
+}
+#apDiv21 {
+	position:absolute;
+	left:1024px;
+	top:2966px;
+	width:53px;
+	height:32px;
+	z-index:1;
+}
+#apDiv22 {
+	position:absolute;
+	left:1274px;
+	top:2799px;
+	width:51px;
+	height:30px;
+	z-index:1;
+}
+</style>
+</head>
+<body>    
+	<section class="section-wrap">
+    <div id="test" style=" position:absolute;top:0px;z-index:20; height:100px;"></div>
+		<div class="section section-1">
+        <div id="apDiv2" class="labelbox"><a target="_blank" href="fengchecao.html">风车草</a></div>
+        <div id="apDiv3" class="labelbox"><a target="_blank" href="haijinsha.html">海金沙</a></div>
+        <div id="apDiv4" class="labelbox"><a target="_blank" href="yiyi.html">薏苡</a></div>
+        <div id="apDiv7" class="labelbox"><a target="_blank" href="shuangsuiquebai.html">双穗雀稗</a></div>
+        <div id="apDiv8" class="labelbox"><a target="_blank" href="guihua.html">桂花</a></div>
+  		<a target="_blank" href="search.html"><div id="learnmore1">LEARN MORE...</div></a>
+        <div id="apDiv11" class="labelbox">苏铁</div>
+        <div id="apDiv12" class="labelbox">荷花</div>
+        <div id="apDiv13" class="labelbox">银杏</div>
+        <div id="apDiv14" class="labelbox">小琴丝竹</div>
+  		<a target="_blank" href="search.html"><div id="apDiv9">LEARN MORE...</div></a>
+        <div id="apDiv16" class="labelbox">睡莲</div>
+        <div id="apDiv17" class="labelbox">红花羊蹄甲</div>
+        <div id="apDiv18" class="labelbox">小叶榕</div>
+        <div id="apDiv19" class="labelbox">荷花</div>
+        <div id="apDiv20" class="labelbox">黄金菊</div>
+        <div id="apDiv21" class="labelbox">香樟</div>
+        <div id="apDiv22" class="labelbox">银木</div>
+<a target="_blank" href="search.html"><div id="apDiv10">LEARN MORE...</div></a>
+			<div class="title active">
+           
+			  <p class="tit"></p>
+		  </div>
+
+      </div> 
+     	
+	  <div class="section section-2">
+             	<div id="jiangan" style="left:700px;top:400px;width:209px;height:151px;position:absolute;z-index:1;cursor:pointer;background-image:url('img/jianganbutton.png');background-size:100% 100%;-webkit-transition:0.5s ease-in-out;-moz-transition:0.5s ease-in-out;-o-transition:0.5s ease-in-out;transition:0.5s ease-in-out;"
+        onClick="var jastyle=document.getElementById('jiangan').style;
+        if(jastyle.left=='0px')
+{jastyle.left='700px';jastyle.top='400px';jastyle.width='209px';jastyle.height='151px';jastyle.backgroundImage='url(img/jianganbutton.png)';jastyle.zIndex=1;}
+        else
+{jastyle.left='0px';jastyle.top='0px';jastyle.width='100%';jastyle.height='100%';jastyle.backgroundImage='url(img/jiangan.jpg)';jastyle.zIndex=99;}"
+onMouseOver="document.getElementById('jiangan').style.backgroundImage='url(img/jianganbuttonhover.png)';"
+onMouseOut="document.getElementById('jiangan').style.backgroundImage='url(img/jianganbutton.png)';"
+></div>
+
+		<div id="huaxi" style="left:850px;top:100px;width:87px;height:125px;position:absolute;z-index:1;cursor:pointer;background-image:url('img/huaxibutton.png');background-size:100% 100%;-webkit-transition:0.5s ease-in-out;-moz-transition:0.5s ease-in-out;-o-transition:0.5s ease-in-out;transition:0.5s ease-in-out;"
+        onClick="var jastyle=document.getElementById('huaxi').style;
+        if(jastyle.left=='0px')
+{jastyle.left='850px';jastyle.top='100px';jastyle.width='87px';jastyle.height='125px';jastyle.backgroundImage='url(img/huaxibutton.png)';jastyle.zIndex=1;}
+        else
+{jastyle.left='0px';jastyle.top='0px';jastyle.width='100%';jastyle.height='100%';jastyle.backgroundImage='url(img/huaxi.jpg)';jastyle.zIndex=99;}"
+onMouseOver="document.getElementById('huaxi').style.backgroundImage='url(img/huaxibuttonhover.png)';"
+onMouseOut="document.getElementById('huaxi').style.backgroundImage='url(img/huaxibutton.png)';"
+></div>
+
+		<div id="wangjiang" style="left:950px;top:150px;width:176px;height:186px;position:absolute;z-index:1;cursor:pointer;background-image:url('img/wangjiangbutton.png');background-size:100% 100%;-webkit-transition:0.5s ease-in-out;-moz-transition:0.5s ease-in-out;-o-transition:0.5s ease-in-out;transition:0.5s ease-in-out;"
+        onClick="var jastyle=document.getElementById('wangjiang').style;
+        if(jastyle.left=='0px')
+{jastyle.left='950px';jastyle.top='150px';jastyle.width='176px';jastyle.height='186px';jastyle.backgroundImage='url(img/wangjiangbutton.png)';jastyle.zIndex=1;}
+        else
+{jastyle.left='0px';jastyle.top='0px';jastyle.width='100%';jastyle.height='100%';jastyle.backgroundImage='url(img/wangjiang.jpg)';jastyle.zIndex=99;}"
+onMouseOver="document.getElementById('wangjiang').style.backgroundImage='url(img/wangjiangbuttonhover.png)';"
+onMouseOut="document.getElementById('wangjiang').style.backgroundImage='url(img/wangjiangbutton.png)';"
+></div>-->
+
+
+		<div class="title">
+            
+      <p class="tit"></p>
+			</div>
+		</div>
+<div class="section section-3">
+			<div class="title">
+				<p class="tit"></p>
+			</div>
+		</div>
+<div class="section section-4">
+			<div class="title">
+				<p class="tit"></p>
+			</div>
+		</div>
+		<div class="section section-5">
+			<div class="title">
+				<p class="tit"></p>
+			</div>
+		</div>
+</section>
+	<ul class="section-btn">
+	  <li class="on"></li>
+	  <li></li>
+	  <li></li>
+	  <li></li>
+	  <li></li>
+	</ul>
+	<div class="arrow">&laquo;</div>
+<script src="js/jquery.js"></script>
+<script src='js/bootstrap.min.js'></script>
+<script>
+	!function(a){"function"==typeof define&&define.amd?define(["jquery"],a):"object"==typeof exports?module.exports=a:a(jQuery)}(function(a){function b(b){var g=b||window.event,h=i.call(arguments,1),j=0,l=0,m=0,n=0,o=0,p=0;if(b=a.event.fix(g),b.type="mousewheel","detail"in g&&(m=-1*g.detail),"wheelDelta"in g&&(m=g.wheelDelta),"wheelDeltaY"in g&&(m=g.wheelDeltaY),"wheelDeltaX"in g&&(l=-1*g.wheelDeltaX),"axis"in g&&g.axis===g.HORIZONTAL_AXIS&&(l=-1*m,m=0),j=0===m?l:m,"deltaY"in g&&(m=-1*g.deltaY,j=m),"deltaX"in g&&(l=g.deltaX,0===m&&(j=-1*l)),0!==m||0!==l){if(1===g.deltaMode){var q=a.data(this,"mousewheel-line-height");j*=q,m*=q,l*=q}else if(2===g.deltaMode){var r=a.data(this,"mousewheel-page-height");j*=r,m*=r,l*=r}if(n=Math.max(Math.abs(m),Math.abs(l)),(!f||f>n)&&(f=n,d(g,n)&&(f/=40)),d(g,n)&&(j/=40,l/=40,m/=40),j=Math[j>=1?"floor":"ceil"](j/f),l=Math[l>=1?"floor":"ceil"](l/f),m=Math[m>=1?"floor":"ceil"](m/f),k.settings.normalizeOffset&&this.getBoundingClientRect){var s=this.getBoundingClientRect();o=b.clientX-s.left,p=b.clientY-s.top}return b.deltaX=l,b.deltaY=m,b.deltaFactor=f,b.offsetX=o,b.offsetY=p,b.deltaMode=0,h.unshift(b,j,l,m),e&&clearTimeout(e),e=setTimeout(c,200),(a.event.dispatch||a.event.handle).apply(this,h)}}function c(){f=null}function d(a,b){return k.settings.adjustOldDeltas&&"mousewheel"===a.type&&b%120===0}var e,f,g=["wheel","mousewheel","DOMMouseScroll","MozMousePixelScroll"],h="onwheel"in document||document.documentMode>=9?["wheel"]:["mousewheel","DomMouseScroll","MozMousePixelScroll"],i=Array.prototype.slice;if(a.event.fixHooks)for(var j=g.length;j;)a.event.fixHooks[g[--j]]=a.event.mouseHooks;var k=a.event.special.mousewheel={version:"3.1.12",setup:function(){if(this.addEventListener)for(var c=h.length;c;)this.addEventListener(h[--c],b,!1);else this.onmousewheel=b;a.data(this,"mousewheel-line-height",k.getLineHeight(this)),a.data(this,"mousewheel-page-height",k.getPageHeight(this))},teardown:function(){if(this.removeEventListener)for(var c=h.length;c;)this.removeEventListener(h[--c],b,!1);else this.onmousewheel=null;a.removeData(this,"mousewheel-line-height"),a.removeData(this,"mousewheel-page-height")},getLineHeight:function(b){var c=a(b),d=c["offsetParent"in a.fn?"offsetParent":"parent"]();return d.length||(d=a("body")),parseInt(d.css("fontSize"),10)||parseInt(c.css("fontSize"),10)||16},getPageHeight:function(b){return a(b).height()},settings:{adjustOldDeltas:!0,normalizeOffset:!0}};a.fn.extend({mousewheel:function(a){return a?this.bind("mousewheel",a):this.trigger("mousewheel")},unmousewheel:function(a){return this.unbind("mousewheel",a)}})});
+	
+	$(function(){
+		var i=0;
+		var $btn = $('.section-btn li'),
+			$wrap = $('.section-wrap'),
+			$arrow = $('.arrow');
+		
+		/*当前页面赋值*/
+		function up(){i++;if(i==$btn.length){i=0};}
+		function down(){i--;if(i<0){i=$btn.length-1};}
+		
+		/*页面滑动*/
+		function run(){
+			$btn.eq(i).addClass('on').siblings().removeClass('on');	
+			$wrap.attr("class","section-wrap").addClass(function() { return "put-section-"+i; }).find('.section').eq(i).find('.title').addClass('active');
+		};
+		
+		/*右侧按钮点击*/
+		$btn.each(function(index) {
+			$(this).click(function(){
+				i=index;
+				run();
+			})
+		});
+		
+		/*翻页按钮点击*/
+		$arrow.one('click',go);
+		function go(){
+			up();run();	
+			setTimeout(function(){$arrow.one('click',go)},1000)
+		};
+		
+		/*响应鼠标*/
+		$wrap.one('mousewheel',mouse_);
+		function mouse_(event){
+			if(event.deltaY<0) {up()}
+			else{down()}
+			run();
+			setTimeout(function(){$wrap.one('mousewheel',mouse_)},1000)
+		};
+		
+		/*响应键盘上下键*/
+		$(document).one('keydown',k);
+		function k(event){
+			var e=event||window.event;
+			var key=e.keyCode||e.which||e.charCode;
+			switch(key)	{
+				case 38: down();run();	
+				break;
+				case 40: up();run();	
+				break;
+			};
+			setTimeout(function(){$(document).one('keydown',k)},1000);
+		}
+	});
+</script>
+
+</body>
+</html>
